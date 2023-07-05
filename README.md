@@ -38,12 +38,13 @@ SHA of each chunk is verified before and after sending each chunk.
 
 ## Architecture Overview:
 
-The Following entities will be present in the network :
-1. **Trackers**:
+The Following entities will be present in the network:
+
+1. **Trackers** 
   Maintain information of clients with their files(shared by client) to assist the
   clients for the communication between peers.
 
-2. **Clients**:
+2. **Clients** 
   a. User should create an account and register with tracker
   
   b. Login Using The User Credentials
