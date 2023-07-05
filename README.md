@@ -117,48 +117,56 @@ The Following entities will be present in the network :
 ## Commands:
   1. **Tracker**
   
-    a. Run Tracker: ```./tracker tracker_info.txt```
-    tracker.txt - Contains ip, port details of  the trackers
-    
-    b. Close Tracker: quit
+  a. Run Tracker: 
+  To compile code for tracker run :  ```g++ tracker.cpp```
+  To run code for the tracker run :  ```./a.out tracker.txt```
+  
+  tracker.txt - Contains ip, port details of the tracker
+  
+  b. Close Tracker:  ```quit```
     
   2.**Client**
   
-    a. Run Client: ./client <IP>:<PORT> tracker_info.txt
-    tracker_info.txt - Contains ip, port details of all the trackers 
+  a. Run Client:
+  To compile code for client run:  ```g++ client.cpp sha1.cpp``` (Compiling code for SHA also)
+  To run code for client run: ```./client <IP>:<PORT> tracker.txt```
+  
+  tracker.txt - Contains ip, port details of all the trackers 
+  
+  b. Create User Account: ```create_user <user_id> <password>```
+  
+  c. Login: ```login <user_id> <password>```
+  
+  d. Create Group: ```create_group <group_id>```
+  
+  e. Join Group: ```join_group <group_id>```
+  
+  f. Leave Group: ```leave_group <group_id>```
+  
+  g. List Pending Join: ```list_requests<group_id>```
+  
+  h. Accept Group Joining Request:
+    ```accept_request <group_id> <user_id>```
     
-    b. Create User Account: create_user <user_id> <password>
-    
-    c. Login: login <user_id> <password>
-    
-    d. Create Group: create_group <group_id>
-    
-    e. Join Group: join_group <group_id>
-    
-    f. Leave Group: leave_group <group_id>
-    
-    g. List Pending Join: list_requests<group_id>
-    
-    h. Accept Group Joining Request:
-    accept_request <group_id> <user_id>
-    i. List All Group In Network: list_groups
-    
-    j. List All sharable Files In Group: list_files <group_id>
-    
-    k. Upload File: upload_file <file_path> <group_id>
-    
-    l. Download File:
-    download_file <group_id> <file_name>
-    <destination_path>
-    
-    m. Logout: logout
-    
-    n. Show_downloads: show_downloads
-    Output format:
-    [D] [grp_id] filename
-    [C] [grp_id] filename D(Downloading), C(Complete)
-    
-    o. Stop sharing: stop_share <group_id> <file_name>
+  i. List All Group In Network: ```list_groups```
+  
+  j. List All sharable Files In Group: ```list_files <group_id>```
+  
+  k. Upload File: ```upload_file <file_path> <group_id>```
+  
+  l. Download File:
+  
+  ```download_file <group_id> <file_name> <destination_path>```
+  
+  m. Logout: ```logout```
+  
+  n. Show_downloads: ```show_downloads```
+  
+  Output format:
+  [D] [grp_id] filename
+  [C] [grp_id] filename D(Downloading), C(Complete)
+  
+  o. Stop sharing: ```stop_share <group_id> <file_name>```
 
 
 
