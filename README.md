@@ -117,12 +117,12 @@ The Following entities will be present in the network :
 ## Commands:
   1. **Tracker**
   
-    a. Run Tracker: ./tracker tracker_info.txt
+    a. Run Tracker: <span style="color: grey;">./tracker tracker_info.txt</span>
     tracker.txt - Contains ip, port details of  the trackers
     
     b. Close Tracker: quit
     
-  2.** Client**
+  2.**Client**
   
     a. Run Client: ./client <IP>:<PORT> tracker_info.txt
     tracker_info.txt - Contains ip, port details of all the trackers 
