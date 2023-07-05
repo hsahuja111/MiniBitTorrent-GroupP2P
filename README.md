@@ -20,6 +20,8 @@ Below is the image of the architecture followed
 
 ![image](https://github.com/hsahuja111/MiniBitTorrent-GroupP2P/assets/43888676/f770a49c-89ea-4358-a085-2cad5765fdf1)
 
+## Pre-requisites:
+Socket Programming, SHA1 hash, Multi-threading
 
 ### Chunk Size Used :
 
@@ -32,6 +34,7 @@ So we have used SHA1 hash for that. Suppose the file size is 1024KB, then divide
 characters of HASH1 & HASH2 respectively and hence H1H2 is 40 characters.
 
 SHA of each chunk is verified before and after sending each chunk.
+
 
 ## Architecture Overview:
 
