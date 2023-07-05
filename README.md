@@ -118,20 +118,25 @@ The Following entities will be present in the network :
 
 
 ## Commands:
+
   1. **Tracker**
   
   a. Run Tracker: 
+  
   To compile code for tracker run :  ```g++ tracker.cpp```
+  
   To run code for the tracker run :  ```./a.out tracker.txt```
   
   tracker.txt - Contains ip, port details of the tracker
   
   b. Close Tracker:  ```quit```
     
-  2.**Client**
+  2. **Client**
   
   a. Run Client:
+  
   To compile code for client run:  ```g++ client.cpp sha1.cpp``` (Compiling code for SHA also)
+  
   To run code for client run: ```./client <IP>:<PORT> tracker.txt```
   
   tracker.txt - Contains ip, port details of all the trackers 
